@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/551946ca6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <i class="fas fa-cloud"></i>
+          <h1>
+            8
+          </h1>
+          <span class="workshop">
+            <a href="#" id="workarea">
+              &deg C
+            </a>
+            <a href="#" id="workspace">
+              |&deg F
+            </a>
+          </span>
+        </div>
+        <div class="col-3 works">
+          <ul>
+            <li><h3>Ballarat Vic</h3></li>
+            <span> <li id="lamb">Tuesday11:00</li></span>
+            <span>
+              <li id="nature">Cloudy</li>
+            </span>
+          </ul>
+        </div>
+
+        <div class="col-1 free">
+          <ul>
+            <span id="goat"> <li>Humidity:77%</li></span>
+            <span id="tiger"><li>Wind:8km/hr</li></span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col=1">
+          <form>
+            <input
+              type="text"
+              placeholder="Enter the city"
+              class="form-control"
+              id="search-id"
+            />
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <a  href="https://github.com/deepthijerin/weather-app1" class="link"> opensourcecode by deepthi poulose</a>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
