@@ -8,7 +8,7 @@ function showCity(response) {
     document.querySelector("#tiger").innerHTML = `Wind:${Math.round(
       response.data.wind.speed
     )}km/hr`;
-    //document.querySelector("#nature").innerHTML=response.data;
+    document.querySelector("#nature").innerHTML=response.data.weather[0].description;
   }
   
   function searchCity(city) {
