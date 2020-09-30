@@ -43,4 +43,12 @@ h1 {
      position:relative;
      left:350px;
   }
-  
+  .name{
+    position:relative;
+    left:355px;
+  }
+  .list{
+    line-height: 1;
+    position:relative;
+    top:-5px;
+  }
