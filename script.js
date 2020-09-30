@@ -30,10 +30,16 @@ function showCity(response) {
     "Saturday"
   ];
   let day = days[now.getDay()];
-  now.getHours();
-  now.getMinutes();
-  
-  heading.innerHTML = `${day}${now.getHours()}:${now.getMinutes()}`;
+  hours=now.getHours();
+  minutes=now.getMinutes();
+  if(minutes<10){
+       minutes=`0${minutes}`;
+  }
+  if (hours<10)
+{
+    hours=`0${hours}`;
+}  
+  heading.innerHTML = `${day}${hours}:${minutes}`;
   function func1(event) {
     event.preventDefault();
     let h2 = document.querySelector("h3");
